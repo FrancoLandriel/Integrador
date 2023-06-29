@@ -1,0 +1,251 @@
+@media (max-width: 1200px) {
+    .carrito-item img {
+        width: 30vw;
+    }
+
+
+}
+
+@media (min-width: 1200px) {
+    #Dmayoreo {
+        height: 100%;
+    }
+}
+
+@media (max-width: 710px) {
+    .navbar-list {
+        position: absolute;
+        top: 90px;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        background: linear-gradient(90deg, rgba(78, 177, 168, 1) 0%, rgba(15, 145, 115, 1) 100%);
+        ;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+
+}
+
+@media (max-width: 540px) {
+
+
+
+    .navbar {
+        gap: 0px;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .logo {
+        display: none;
+
+    }
+
+    .logo-2 {
+        display: flex;
+        position: absolute;
+        right: 50%;
+        left: 38%;
+
+    }
+
+    .logo-carrito {
+
+        position: absolute;
+        right: 2%;
+        top: 5px;
+        width: 80px;
+        height: 80px;
+    }
+
+
+    .menu-label {
+        display: flex;
+        gap: 0px;
+    }
+
+    .menu-label img {
+        position: absolute;
+        left: 2%;
+        top: 15px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .navbar-list {
+        flex-direction: column;
+        z-index: 2;
+        display: none;
+    }
+
+    #menu-toggle:checked+.navbar-list {
+        display: flex;
+    }
+
+    .end p {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .end p a {
+        color: black;
+
+    }
+
+    .hero-info h1 {
+        font-weight: 700;
+        font-size: 45px;
+    }
+
+    #catalogo h2 {
+        font-weight: 700;
+        font-size: 35px;
+    }
+
+    .info-contactos h2 {
+        font-weight: 700;
+        font-size: 30px;
+
+    }
+
+    .ubi h2 {
+        font-weight: 700;
+        font-size: 35px;
+    }
+
+    .contactos {
+        width: 380px;
+        height: 380px;
+
+    }
+
+    .contactos-caja {
+        width: 350px;
+    }
+
+    iframe {
+        width: 300px;
+        height: 300px;
+    }
+
+    /*mayoreo*/
+    label {
+        font-size: 25px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    header {
+        height: 60px;
+
+    }
+
+    .menu-label img {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 2%;
+        top: 3px;
+    }
+
+    .logo-carrito {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        right: 2%;
+        top: 0px;
+    }
+
+    .logo-2 {
+        position: absolute;
+        left: 40%;
+        right: 50%;
+        width: 60px;
+        height: 60px;
+    }
+
+
+
+    #catalogo h2 {
+        font-weight: 700;
+        font-size: 27px;
+    }
+
+    .info-contactos h2 {
+        font-weight: 700;
+        font-size: 22px;
+
+
+    }
+
+    .ubi h2 {
+        font-weight: 700;
+        font-size: 27px;
+    }
+
+    .contenedor-zapatillas {
+        width: 225px;
+
+    }
+
+    .nombre-talle h3 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .nombre-talle p {
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .precio-carro span {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .precio-carro button {
+
+        font-size: 18px;
+    }
+
+    .contactos {
+        width: 90vw;
+        height: 30vh;
+
+    }
+
+    .contactos-caja {
+        width: 70vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .instagram {
+        height: 30px;
+        width: 30px;
+    }
+
+    iframe {
+        height: 250px;
+        width: 250px;
+    }
+
+    .contactos .contactos-caja a {
+
+
+        font-size: 12px;
+
+    }
+
+    /*mayoreo*/
+    label {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,532 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'titiññium web', sans-serif;
+
+}
+
+header {
+
+    background: linear-gradient(180deg, rgba(9, 82, 74, 1) 0%, rgba(7, 113, 102, 1) 50%, rgb(7, 153, 138) 100%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 0px 30px 0px 30px;
+    position: sticky;
+    top: 0px;
+}
+
+.menu-label img {
+    width: 50px;
+    height: 50px;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+}
+
+.logo-2 {
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    display: none;
+}
+
+.logo-carrito {
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+}
+
+.navbar,
+.navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    gap: 30px;
+
+}
+
+.navbar-list {
+    gap: 30px;
+}
+
+.navbar-list a {
+    color: rgb(228, 225, 225);
+    font-size: 20px;
+}
+
+.navbar-list li:first-child>a {
+    color: rgb(233, 229, 229);
+    font-weight: 700;
+}
+
+/*menu hamburgueas*/
+
+#menu-toggle,
+#cart-toggle,
+.menu-label {
+    display: none;
+}
+
+#cart-toggle:checked+.carrito {
+    display: flex;
+}
+
+/*carrito*/
+.carrito {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    padding: 50px 30px;
+    border-left: 5px solid rgba(78, 177, 168, 1);
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, rgba(78, 177, 168, 1) 0%, rgba(15, 145, 115, 1) 100%);
+    gap: 30px;
+    height: calc(70vh - 65px);
+    overflow-y: scroll;
+    display: none;
+    z-index: 2;
+    border-radius: 1rem;
+
+}
+
+.carrito-item img {
+    width: 400px;
+
+}
+
+.carrito::-webkit-scrollbar {
+    display: none;
+}
+
+.carrito h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/*menu hamburgueas*/
+main {
+
+    background: linear-gradient(180deg, rgb(7, 153, 138) 0%, rgba(97, 196, 162, 1) 50%, rgba(11, 177, 190, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+
+
+
+}
+
+#hero {
+    margin-top: 65px;
+    padding: 50px 0px 50px 0px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.hero-info {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-info h1 {
+    font-weight: 700;
+    font-size: 70px;
+}
+
+.hero-info p {
+    font-weight: 400;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.catalogos {
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.catalogos a {
+    background-color: rgb(100, 100, 100);
+    color: white;
+    gap: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 3px 3px rgba(116, 113, 113, 0.863);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#catalogo {
+    margin-top: 65px;
+    padding: 50px 0px 50px 0px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#catalogo h2 {
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.catalogo-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.contenedor-zapatillas {
+    background-color: rgb(59, 104, 89);
+    border-radius: 10px;
+    padding: 1rem;
+    width: 350px;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-zapatillas {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nombre-talle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nombre-talle h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.nombre-talle p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.precio-carro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.precio-carro span {
+    font-size: 27px;
+    font-weight: 400;
+}
+
+.precio-carro button {
+    background-color: rgb(8, 54, 8);
+    color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 25px;
+}
+
+.carrito-item {
+    color: aliceblue;
+}
+
+.info-contactos {
+    padding: 50px 0px 50px 0px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(59, 104, 89);
+    box-shadow: 10px 10px 5px 5px rgb(36, 63, 54);
+    width: 500px;
+    height: 500px;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    gap: 1rem;
+}
+
+.contactos-caja {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    background: rgb(29, 73, 59);
+    box-shadow: 1px 1px 1px 1px rgb(11, 56, 41);
+    width: 400px;
+    height: 60px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    gap: 3rem;
+    margin: 1rem;
+}
+
+.instagram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(11, 128, 89);
+    width: 60px;
+    height: 60px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    gap: 3rem;
+}
+
+.contactos .contactos-caja a {
+    color: rgb(233, 227, 220);
+    width: 150px;
+    padding: 8px 0px;
+    font-size: 17px;
+    text-align: center;
+    border-radius: 1rem;
+    font-weight: 500;
+}
+
+#contacto {
+    margin-top: 65px;
+    padding: 50px 0px 50px 0px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-contactos h2 {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.ubi h2 {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.ubi {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.end {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(42, 116, 108);
+    height: 15vh;
+    gap: 15px;
+}
+
+.end p {
+    font-size: px;
+    font-weight: 500;
+}
+
+.end p a {
+    color: black;
+
+}
+
+/*Datos para mayoristas*/
+
+#Dmayoreo {
+    background: linear-gradient(180deg, rgb(7, 153, 138) 0%, rgba(97, 196, 162, 1) 50%, rgba(11, 177, 190, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+
+
+}
+
+.datos-m {
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+
+
+}
+
+.informacion-compra {
+    display: flex;
+    flex-direction: column;
+    gap: 15px
+}
+
+.personal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.informacion-compra h1 {
+    font-size: 50px;
+}
+
+.informacion-compra h2 {
+    font-size: 30px;
+}
+
+label {
+    font-size: 30px;
+}
+
+input {
+    height: 50px;
+    background-color: rgb(7, 153, 138);
+    border-color: rgb(7, 153, 138);
+}
+
+.cliente-f {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.cliente-f input {
+    height: 50px;
+    width: 50px;
+    color: aliceblue;
+    border-radius: 7px;
+}
+
+.opciones-envio,
+.opciones-pago {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#enviar {
+    width: 55px;
+    color: aliceblue;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.volver {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.volver a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 50px;
+    background: rgb(7, 153, 138);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 0px black;
+    color: aliceblue;
+}
+
+/*login*/
+.login {
+    background: linear-gradient(180deg, rgb(7, 153, 138) 0%, rgba(97, 196, 162, 1) 50%, rgba(11, 177, 190, 1) 100%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login img {
+    width: 80px;
+    height: 80px;
+}
+
+.login-stile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(11, 177, 190, 1);
+    padding: 30px;
+    color: aliceblue;
+    border: solid rgb(7, 153, 138);
+    border-radius: 10px;
+}
+
+.login-data {
+    align-items: center;
+    justify-content: start;
+}
+
+.login-data a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 50px;
+    background: rgb(7, 153, 138);
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 0px black;
+    color: aliceblue;
+}
